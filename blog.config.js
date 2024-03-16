@@ -1,5 +1,5 @@
 const BLOG = {
-  title: 'Notionic',
+  title: '暮色谙时',
   author: '木杉',
   email: 'i@zuolan.me',
   link: 'https://zuolan.me',
