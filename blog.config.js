@@ -2,7 +2,7 @@ const BLOG = {
   title: '暮色谙时',
   author: '木杉',
   email: 'i@zuolan.me',
-  link: 'https://zuolan.me',
+  link: 'https://museans.top',
   newsletter: 'Notionic Weekly',
   description: 'What's past is prologue',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
@@ -31,7 +31,7 @@ const BLOG = {
   socialLink: {
     twitter: 'https://twitter.com/izuolan',
     github: 'https://github.com/izuolan',
-    telegram: 'https://t.me/zuolan'
+    telegram: 'https://t.me/museans'
   },
   seo: {
     keywords: ['Notionic', 'Zuolan', 'Blog'],
