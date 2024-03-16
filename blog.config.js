@@ -1,7 +1,7 @@
 const BLOG = {
   title: '暮色谙时',
   author: '木杉',
-  email: 'i@zuolan.me',
+  email: 'i@museans.me',
   link: 'https://museans.top',
   newsletter: 'Notionic Weekly',
   description: 'What's past is prologue',
