@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import BlogPost from '@/components/BlogPost'
 import Container from '@/components/Container'
 import Tags from '@/components/Common/Tags'
