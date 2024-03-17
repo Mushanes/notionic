@@ -151,3 +151,7 @@ svg + .notion-page-title-text {
 .notion-collection-row {
   @apply hidden;
 }
+/* 修复预览图标只显示一半 */
+.lazy-image-real {
+  top: 0;
+}
