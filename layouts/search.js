@@ -20,6 +20,27 @@ const SearchLayout = ({ tags, posts, currentTag }) => {
     })
   }
 
+  // 新增状态变量 showTags，用于控制是否显示标签
+  const [showTags, setShowTags] = useState(true)
+
+  // 在搜索结果发生变化时，更新 showTags 状态
+  useEffect(() => {
+    // 只有当搜索框中有输入时，才更新 showTags 状态
+    if (searchValue !== '') {
+      if (filteredBlogPosts.length > 0) {
+        setShowTags(false)
+      } else {
+        setShowTags(true)
+      }
+    } else {
+      // 当搜索框为空时，根据 currentTag 的值来更新 showTags 状态
+      if (currentTag) {
+        setShowTags(false)
+      } else {
+        setShowTags(true)
+      }
+    }
+  }, [filteredBlogPosts, searchValue, currentTag])
   return (
     <Container>
       <div className='relative'>
@@ -55,6 +76,8 @@ const SearchLayout = ({ tags, posts, currentTag }) => {
             {t.SEARCH.NOT_FOUND}
           </p>
         )}
+        {/* 只有当 showTags 为 true 时才渲染 Tags 组件；顺便调整了组件的位置，让NOT_FOUND显示在标签上方 */}
+	      {showTags && <Tags tags={tags} currentTag={currentTag} />}
         {filteredBlogPosts.slice(0, 20).map((post) => (
           <BlogPost key={post.id} post={post} />
         ))}
