@@ -77,7 +77,7 @@ const SearchLayout = ({ tags, posts, currentTag }) => {
           </p>
         )}
         {/* 只有当 showTags 为 true 时才渲染 Tags 组件；顺便调整了组件的位置，让NOT_FOUND显示在标签上方 */}
-	      {showTags && <Tags tags={tags} currentTag={currentTag} />}
+	{showTags && <Tags tags={tags} currentTag={currentTag} />}
         {filteredBlogPosts.slice(0, 20).map((post) => (
           <BlogPost key={post.id} post={post} />
         ))}
