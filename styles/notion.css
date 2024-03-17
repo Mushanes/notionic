@@ -155,3 +155,10 @@ svg + .notion-page-title-text {
 .lazy-image-real {
   top: 0;
 }
+/* 修复标题不换行 */
+.notion-h,
+.notion-h1,
+.notion-h2,
+.notion-h3 {
+  display: block;
+}
