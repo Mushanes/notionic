@@ -1,10 +1,10 @@
 const BLOG = {
-  title: 'Notionic',
-  author: '左蓝',
-  email: 'i@zuolan.me',
-  link: 'https://zuolan.me',
+  title: '暮色谙时',
+  author: '木杉',
+  email: 'i@museans.me',
+  link: 'https://museans.top',
   newsletter: 'Notionic Weekly',
-  description: 'A static blog build on top of Notion and Next.js',
+  description: 'What\'s past is prologue',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: 'auto', // ['light', 'dark', 'auto'],
@@ -42,7 +42,7 @@ const BLOG = {
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   notionDomain: 'izuolan.notion.site',
   telegramToken: process.env.TELEGRAM_TOKEN, // The token of your Telegram bot
-  telegramChatId: '263895784', // The chat id of your Telegram bot
+  telegramChatId: '5441501226', // The chat id of your Telegram bot
   telegramChannelUrl: 'https://channel.zuolan.me/', // The link of your Telegram channel
   telegramChannelName: 'zuolan_me', // The name of your Telegram channel
   craftConfigShareUrl: 'https://www.craft.do/s/kQtcWqkv98cHhB', // The link to share your craft config
